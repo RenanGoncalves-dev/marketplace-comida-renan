@@ -1,11 +1,18 @@
-# Sample Snack app
+# 🍔 Marketplace de Comida - RennMarketPlace
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Trabalho 2 desenvolvido para a disciplina de **Programação para Dispositivos Móveis (2026/1)**.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+O aplicativo é um marketplace virtual onde usuários podem se cadastrar, fazer login, anunciar refeições/alimentos para venda e visualizar anúncios de outros usuários com um sistema de filtro dinâmico.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## 🚀 Tecnologias Utilizadas
+* **React Native** (com Expo CLI)
+* **Google Firebase** (Authentication para controle de acesso)
+* **Cloud Firestore** (Banco de dados NoSQL para os anúncios)
+* **Expo Vector Icons** (Interface visual)
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
-
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+## 🛠️ Funcionalidades Implementadas
+* **Autenticação Completa:** Cadastro e Login integrados ao Firebase com tratamento de erros nativo em português na tela.
+* **Persistência de Sessão:** O usuário permanece logado mesmo fechando o app.
+* **Criação de Anúncios:** Tela para cadastrar alimentos com título, descrição e preço salvando direto no Firestore.
+* **Tela Inicial Dinâmica:** Lista os anúncios do mais novo ao mais antigo com limite de 3 linhas na descrição.
+* **Desafio do Filtro:** Filtro no topo da página que permite isolar os anúncios por vendedor ou listar "Todos".
